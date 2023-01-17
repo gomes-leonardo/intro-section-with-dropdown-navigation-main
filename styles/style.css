@@ -282,7 +282,7 @@ p{
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     .wrapper{
         flex-direction: column-reverse;
         justify-content: center;
@@ -338,7 +338,7 @@ p{
         
     }
     .links-container img{
-        width: 66px;
+        width: 50px;
         margin: auto;
     }
 
@@ -354,10 +354,8 @@ p{
     }
 
     #hamburger{
-        display: flex;
-      align-self: center;
-      cursor: pointer;
-      margin-left: 170px;
+       position: absolute;
+       right: 32px;
       
         
     }
@@ -367,8 +365,7 @@ p{
         justify-content: space-between;
         width: 200px;
         
-        
-        
+
         
     }
 
@@ -508,9 +505,10 @@ p{
     } */
 
     #icon-close{
-        position: absolute;
+        margin-left:60px;
         display: none;
-        left: 330px;
+        
+        width: 20px;
     }
     #arrowMobile{
         transition: all 0.3s ease-in;
@@ -520,4 +518,46 @@ p{
         transition: all 0.3s ease-in;
         transform: rotate(180deg);
     }
+
+
+}
+
+@media screen and (max-width:420px) {
+    #hamburger{
+        display: flex;
+      align-self: center;
+      cursor: pointer;
+      margin-left: 100px;
+      margin-bottom: 10px;
+      
+        
+    }
+
+    .links-container img{
+        width: 40px;
+        margin: auto;
+    }
+
+    #btn-mbl{
+        border: 1px solid var(--medium-gray);
+        background-color: #FFF;
+        padding: 10px;
+        border-radius: 14px;
+        width: 80px;
+        color: var(--medium-gray);
+    
+        cursor: pointer;
+    }
+
+    .buttons{
+        width: 100px;
+    }
+
+    #icon-close{
+        position: absolute;
+        display: none;
+        left: 260px;
+        width: 20px;
+    }
+
 }

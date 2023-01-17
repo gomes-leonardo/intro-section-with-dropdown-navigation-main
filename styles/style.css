@@ -181,6 +181,10 @@ p{
     
 }
 
+.features span:hover{
+    color: var(--almost-black);
+}
+
  .active{
     opacity: 1;
     width: 150px;
@@ -430,6 +434,10 @@ p{
         transition: 1s ease;
         opacity: 1;
         
+    }
+
+    .span-feature img{
+        margin-right: 10px;
     }
 
     
